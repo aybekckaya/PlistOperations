@@ -1,5 +1,6 @@
- Plist *list =[[Plist alloc] initWithPlistName:@"asd"];
-    [list write:dct Key:@"tempDct"];
+ 
+ Helper class to make plist operations easier. 
+ 
+ Create Plist:
 
-<pre> Plist *list =[[Plist alloc] initWithPlistName:@"asd"];
-    [list write:dct Key:@"tempDct"];</pre>
+<pre> Plist *list =[[Plist alloc] initWithPlistName:@"myPlist"];</pre>
