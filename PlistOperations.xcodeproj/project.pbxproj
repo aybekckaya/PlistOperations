@@ -14,6 +14,9 @@
 		A3CEE8E01AF2280C008F249A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CEE8DF1AF2280C008F249A /* Images.xcassets */; };
 		A3CEE8E31AF2280C008F249A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3CEE8E11AF2280C008F249A /* LaunchScreen.xib */; };
 		A3CEE8EF1AF2280C008F249A /* PlistOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CEE8EE1AF2280C008F249A /* PlistOperationsTests.m */; };
+		A3CEE8FA1AF22887008F249A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CEE8F91AF22887008F249A /* UIKit.framework */; };
+		A3CEE8FC1AF2288C008F249A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CEE8FB1AF2288C008F249A /* Foundation.framework */; };
+		A3CEE9001AF228C4008F249A /* Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CEE8FF1AF228C4008F249A /* Plist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		A3CEE8E81AF2280C008F249A /* PlistOperationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlistOperationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CEE8ED1AF2280C008F249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3CEE8EE1AF2280C008F249A /* PlistOperationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistOperationsTests.m; sourceTree = "<group>"; };
+		A3CEE8F81AF22835008F249A /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		A3CEE8F91AF22887008F249A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3CEE8FB1AF2288C008F249A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A3CEE8FE1AF228C4008F249A /* Plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plist.h; sourceTree = "<group>"; };
+		A3CEE8FF1AF228C4008F249A /* Plist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CEE8FC1AF2288C008F249A /* Foundation.framework in Frameworks */,
+				A3CEE8FA1AF22887008F249A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,8 @@
 		A3CEE8C61AF2280C008F249A = {
 			isa = PBXGroup;
 			children = (
+				A3CEE8FB1AF2288C008F249A /* Foundation.framework */,
+				A3CEE8F91AF22887008F249A /* UIKit.framework */,
 				A3CEE8D11AF2280C008F249A /* PlistOperations */,
 				A3CEE8EB1AF2280C008F249A /* PlistOperationsTests */,
 				A3CEE8D01AF2280C008F249A /* Products */,
@@ -81,6 +93,7 @@
 		A3CEE8D11AF2280C008F249A /* PlistOperations */ = {
 			isa = PBXGroup;
 			children = (
+				A3CEE8FD1AF22894008F249A /* Plist */,
 				A3CEE8D61AF2280C008F249A /* AppDelegate.h */,
 				A3CEE8D71AF2280C008F249A /* AppDelegate.m */,
 				A3CEE8D91AF2280C008F249A /* ViewController.h */,
@@ -98,6 +111,7 @@
 			children = (
 				A3CEE8D31AF2280C008F249A /* Info.plist */,
 				A3CEE8D41AF2280C008F249A /* main.m */,
+				A3CEE8F81AF22835008F249A /* Header.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +131,15 @@
 				A3CEE8ED1AF2280C008F249A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3CEE8FD1AF22894008F249A /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				A3CEE8FE1AF228C4008F249A /* Plist.h */,
+				A3CEE8FF1AF228C4008F249A /* Plist.m */,
+			);
+			name = Plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +244,7 @@
 			files = (
 				A3CEE8DB1AF2280C008F249A /* ViewController.m in Sources */,
 				A3CEE8D81AF2280C008F249A /* AppDelegate.m in Sources */,
+				A3CEE9001AF228C4008F249A /* Plist.m in Sources */,
 				A3CEE8D51AF2280C008F249A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
