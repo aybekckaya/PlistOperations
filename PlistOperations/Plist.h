@@ -15,6 +15,7 @@
 
 
 /**
+ /
     Creates Plist in documents folder if it has not created yet. 
     @param : plistName (name of plist without extension "plist")
  */
